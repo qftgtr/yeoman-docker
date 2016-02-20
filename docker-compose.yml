@@ -1,0 +1,9 @@
+webapp:
+  image: yeoman
+  volumes:
+    - $PWD/webapp:/webapp
+  working_dir: /webapp
+  ports:
+    - "9000:9000"
+    - "3001:3001"
+  command: gulp serve
