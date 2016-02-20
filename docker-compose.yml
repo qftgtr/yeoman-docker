@@ -1,9 +1,6 @@
-webapp:
-  image: yeoman
+yeoman-webapp:
+  image: yeoman/skeleton
   volumes:
-    - $PWD/webapp:/webapp
-  working_dir: /webapp
-  ports:
-    - "9000:9000"
-    - "3001:3001"
-  command: gulp serve
+    - $PWD/webapp:/home/yeoman/gen/webapp
+  working_dir: /home/yeoman/gen/webapp
+  command: yo webapp
