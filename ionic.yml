@@ -1,0 +1,7 @@
+ionic:
+  image: qftgtr/yeoman
+  container_name: ionic
+  volumes:
+    - $PWD/ionic:/home/yeoman/ionic
+  working_dir: /home/yeoman/ionic
+  command: /bin/bash
