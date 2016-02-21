@@ -16,5 +16,6 @@ RUN useradd -u 1000 yeoman \
 
 USER yeoman
 WORKDIR /home/yeoman
+ENV NPM_CONFIG_BIN_LINKS=false
 
 CMD ["/bin/bash"]
