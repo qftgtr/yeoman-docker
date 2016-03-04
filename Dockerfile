@@ -7,8 +7,8 @@ RUN apt-get update && npm update --global
 RUN apt-get -y install g++ make git python
 
 RUN npm install --global node-gyp yo gulp-cli bower
-RUN npm install --global generator-webapp
-RUN npm install --global generator-ionic
+RUN npm install --global generator-webapp generator-gulp-angular generator-angular-fullstack
+RUN npm install --global node-sass
 
 RUN useradd -u 1000 yeoman \
   && mkdir -p /home/yeoman \
